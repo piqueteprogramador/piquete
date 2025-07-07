@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps Criados - PIQUETE</title>
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <!-- Menu fixo -->
+    <nav class="fixed top-0 w-full bg-gray-800 shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-cyan-400">PIQUETE</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-cyan-300 transition-colors">Home</a>
+                    <a href="prompts.html" class="text-white hover:text-cyan-300 transition-colors">Prompts</a>
+                    <a href="scripts.html" class="text-white hover:text-cyan-300 transition-colors">Scripts</a>
+                    <a href="apps.html" class="text-cyan-400 hover:text-cyan-300 transition-colors">Apps</a>
+                    <a href="contato.html" class="text-white hover:text-cyan-300 transition-colors">Contato</a>
+                </div>
+                <!-- Menu mobile -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-white hover:text-cyan-300">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu mobile dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-gray-700">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-white hover:text-cyan-300">Home</a>
+                <a href="prompts.html" class="block px-3 py-2 text-white hover:text-cyan-300">Prompts</a>
+                <a href="scripts.html" class="block px-3 py-2 text-white hover:text-cyan-300">Scripts</a>
+                <a href="apps.html" class="block px-3 py-2 text-cyan-400 hover:text-cyan-300">Apps</a>
+                <a href="contato.html" class="block px-3 py-2 text-white hover:text-cyan-300">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="pt-16">
+        <!-- Header da página -->
+        <section class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-cyan-400">Apps</span> Criados com IA
+                </h1>
+                <p class="text-xl text-gray-300 mb-8">
+                    Projetos desenvolvidos usando inteligência artificial e tecnologias modernas
+                </p>
+                
+                <!-- Estatísticas -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                    <div class="bg-gray-800 rounded-lg p-4">
+                        <div class="text-2xl font-bold text-cyan-400">12+</div>
+                        <div class="text-gray-300">Apps Criados</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-4">
+                        <div class="text-2xl font-bold text-green-400">8</div>
+                        <div class="text-gray-300">Em Produção</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-4">
+                        <div class="text-2xl font-bold text-purple-400">5</div>
+                        <div class="text-gray-300">Tecnologias</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-4">
+                        <div class="text-2xl font-bold text-yellow-400">100%</div>
+                        <div class="text-gray-300">Com IA</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lista de apps -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- App 1 -->
+                    <div class="app-card bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-400 transition-colors">
+                        <div class="h-48 bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
+                            <i class="fas fa-comments text-6xl text-white opacity-80"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-cyan-400 mb-2">ChatBot Inteligente</h3>
+                            <p class="text-gray-300 mb-4">
+                                Chatbot avançado com processamento de linguagem natural para atendimento ao cliente 24/7.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-600 text-white px-2 py-1 rounded text-sm">React</span>
+                                <span class="bg-green-600 text-white px-2 py-1 rounded text-sm">Node.js</span>
+                                <span class="bg-purple-600 text-white px-2 py-1 rounded text-sm">OpenAI</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-lg text-center transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Testar App
+                                </a>
+                                <a href="https://github.com/piqueteprogramador" target="_blank" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App 2 -->
+                    <div class="app-card bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-400 transition-colors">
+                        <div class="h-48 bg-gradient-to-br from-green-600 to-blue-600 flex items-center justify-center">
+                            <i class="fas fa-chart-line text-6xl text-white opacity-80"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-cyan-400 mb-2">Analisador de Dados</h3>
+                            <p class="text-gray-300 mb-4">
+                                Ferramenta de análise de dados com visualizações interativas e insights automáticos gerados por IA.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-yellow-600 text-white px-2 py-1 rounded text-sm">Python</span>
+                                <span class="bg-red-600 text-white px-2 py-1 rounded text-sm">Flask</span>
+                                <span class="bg-blue-600 text-white px-2 py-1 rounded text-sm">Plotly</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-lg text-center transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Testar App
+                                </a>
+                                <a href="https://github.com/piqueteprogramador" target="_blank" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App 3 -->
+                    <div class="app-card bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-400 transition-colors">
+                        <div class="h-48 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
+                            <i class="fas fa-image text-6xl text-white opacity-80"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-cyan-400 mb-2">Gerador de Imagens IA</h3>
+                            <p class="text-gray-300 mb-4">
+                                Aplicativo para gerar imagens únicas usando inteligência artificial com interface intuitiva.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-600 text-white px-2 py-1 rounded text-sm">React</span>
+                                <span class="bg-purple-600 text-white px-2 py-1 rounded text-sm">DALL-E</span>
+                                <span class="bg-gray-600 text-white px-2 py-1 rounded text-sm">Tailwind</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-lg text-center transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Testar App
+                                </a>
+                                <a href="https://github.com/piqueteprogramador" target="_blank" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App 4 -->
+                    <div class="app-card bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-400 transition-colors">
+                        <div class="h-48 bg-gradient-to-br from-red-600 to-orange-600 flex items-center justify-center">
+                            <i class="fas fa-robot text-6xl text-white opacity-80"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-cyan-400 mb-2">Assistente Virtual</h3>
+                            <p class="text-gray-300 mb-4">
+                                Assistente virtual completo com reconhecimento de voz e capacidades de automação de tarefas.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-yellow-600 text-white px-2 py-1 rounded text-sm">Python</span>
+                                <span class="bg-green-600 text-white px-2 py-1 rounded text-sm">Speech API</span>
+                                <span class="bg-purple-600 text-white px-2 py-1 rounded text-sm">GPT-4</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-lg text-center transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Testar App
+                                </a>
+                                <a href="https://github.com/piqueteprogramador" target="_blank" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App 5 -->
+                    <div class="app-card bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-400 transition-colors">
+                        <div class="h-48 bg-gradient-to-br from-indigo-600 to-blue-600 flex items-center justify-center">
+                            <i class="fas fa-calendar-alt text-6xl text-white opacity-80"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-cyan-400 mb-2">Organizador Inteligente</h3>
+                            <p class="text-gray-300 mb-4">
+                                App de produtividade que usa IA para organizar tarefas e otimizar sua agenda automaticamente.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-600 text-white px-2 py-1 rounded text-sm">Vue.js</span>
+                                <span class="bg-green-600 text-white px-2 py-1 rounded text-sm">Express</span>
+                                <span class="bg-purple-600 text-white px-2 py-1 rounded text-sm">ML</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-lg text-center transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Testar App
+                                </a>
+                                <a href="https://github.com/piqueteprogramador" target="_blank" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App 6 -->
+                    <div class="app-card bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-400 transition-colors">
+                        <div class="h-48 bg-gradient-to-br from-teal-600 to-green-600 flex items-center justify-center">
+                            <i class="fas fa-shopping-cart text-6xl text-white opacity-80"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-cyan-400 mb-2">E-commerce Inteligente</h3>
+                            <p class="text-gray-300 mb-4">
+                                Plataforma de e-commerce com recomendações personalizadas e chatbot de vendas integrado.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-600 text-white px-2 py-1 rounded text-sm">Next.js</span>
+                                <span class="bg-green-600 text-white px-2 py-1 rounded text-sm">Stripe</span>
+                                <span class="bg-purple-600 text-white px-2 py-1 rounded text-sm">AI Rec</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-lg text-center transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Testar App
+                                </a>
+                                <a href="https://github.com/piqueteprogramador" target="_blank" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to action -->
+                <div class="text-center mt-16">
+                    <div class="bg-gray-800 rounded-lg p-8 max-w-4xl mx-auto">
+                        <h2 class="text-3xl font-bold mb-4">Quer criar seu próprio app com IA?</h2>
+                        <p class="text-xl text-gray-300 mb-6">
+                            Aprenda as técnicas e ferramentas que uso para desenvolver aplicações incríveis
+                        </p>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <a href="https://chat.whatsapp.com/BiDE2pul0uS1YU7UvTzjxw" target="_blank" 
+                               class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg transition-colors">
+                                <i class="fab fa-whatsapp mr-2"></i>Entrar no Grupo
+                            </a>
+                            <a href="contato.html" 
+                               class="bg-cyan-600 hover:bg-cyan-700 px-6 py-3 rounded-lg transition-colors">
+                                <i class="fas fa-envelope mr-2"></i>Falar Comigo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">&copy; 2024 PIQUETE. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menu mobile toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Animação de hover nos cards
+        document.querySelectorAll('.app-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
+

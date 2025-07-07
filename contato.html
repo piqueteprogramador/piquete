@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato & Parcerias - PIQUETE</title>
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <!-- Menu fixo -->
+    <nav class="fixed top-0 w-full bg-gray-800 shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-cyan-400">PIQUETE</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-cyan-300 transition-colors">Home</a>
+                    <a href="prompts.html" class="text-white hover:text-cyan-300 transition-colors">Prompts</a>
+                    <a href="scripts.html" class="text-white hover:text-cyan-300 transition-colors">Scripts</a>
+                    <a href="apps.html" class="text-white hover:text-cyan-300 transition-colors">Apps</a>
+                    <a href="contato.html" class="text-cyan-400 hover:text-cyan-300 transition-colors">Contato</a>
+                </div>
+                <!-- Menu mobile -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-white hover:text-cyan-300">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu mobile dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-gray-700">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-white hover:text-cyan-300">Home</a>
+                <a href="prompts.html" class="block px-3 py-2 text-white hover:text-cyan-300">Prompts</a>
+                <a href="scripts.html" class="block px-3 py-2 text-white hover:text-cyan-300">Scripts</a>
+                <a href="apps.html" class="block px-3 py-2 text-white hover:text-cyan-300">Apps</a>
+                <a href="contato.html" class="block px-3 py-2 text-cyan-400 hover:text-cyan-300">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="pt-16">
+        <!-- Header da página -->
+        <section class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-cyan-400">Contato</span> & Parcerias
+                </h1>
+                <p class="text-xl text-gray-300 mb-8">
+                    Vamos criar algo incrível juntos! Entre em contato para colaborações e projetos
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção sobre parcerias -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Aberto a Parcerias</h2>
+                        <div class="space-y-6 text-gray-300">
+                            <p class="text-lg">
+                                Estou sempre em busca de colaborações interessantes com criadores de conteúdo, desenvolvedores e startups que compartilham da mesma paixão por tecnologia e inovação.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <i class="fas fa-users text-cyan-400 text-xl mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-white mb-2">Criadores de Conteúdo</h3>
+                                        <p>Colaborações em vídeos, lives, cursos e projetos educacionais sobre IA e programação.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <i class="fas fa-code text-cyan-400 text-xl mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-white mb-2">Desenvolvedores</h3>
+                                        <p>Parcerias em projetos open source, desenvolvimento de ferramentas e aplicações inovadoras.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <i class="fas fa-rocket text-cyan-400 text-xl mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-white mb-2">Startups</h3>
+                                        <p>Consultoria em IA, desenvolvimento de MVPs e implementação de soluções tecnológicas.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <i class="fas fa-graduation-cap text-cyan-400 text-xl mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-white mb-2">Instituições de Ensino</h3>
+                                        <p>Workshops, palestras e cursos sobre inteligência artificial e desenvolvimento de software.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulário de contato -->
+                    <div class="bg-gray-800 rounded-lg p-8 border border-gray-700">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Entre em Contato</h3>
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Nome Completo</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    required
+                                    class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-50"
+                                    placeholder="Seu nome completo"
+                                >
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required
+                                    class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-50"
+                                    placeholder="seu@email.com"
+                                >
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">Assunto</label>
+                                <select 
+                                    id="subject" 
+                                    name="subject" 
+                                    required
+                                    class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-50"
+                                >
+                                    <option value="">Selecione um assunto</option>
+                                    <option value="parceria">Proposta de Parceria</option>
+                                    <option value="consultoria">Consultoria em IA</option>
+                                    <option value="colaboracao">Colaboração em Projeto</option>
+                                    <option value="palestra">Convite para Palestra/Workshop</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Mensagem</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="5" 
+                                    required
+                                    class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-50"
+                                    placeholder="Descreva sua proposta ou dúvida..."
+                                ></textarea>
+                            </div>
+                            
+                            <button 
+                                type="submit" 
+                                class="w-full bg-cyan-600 hover:bg-cyan-700 px-6 py-3 rounded-lg font-semibold transition-colors"
+                            >
+                                <i class="fas fa-paper-plane mr-2"></i>Enviar Mensagem
+                            </button>
+                        </form>
+                        
+                        <!-- Mensagem de sucesso -->
+                        <div id="success-message" class="hidden mt-6 p-4 bg-green-600 rounded-lg">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            Mensagem enviada com sucesso! Retornarei em breve.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outras formas de contato -->
+        <section class="py-16 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Outras Formas de Contato</h2>
+                    <p class="text-xl text-gray-300">Escolha a forma que preferir para entrar em contato</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- WhatsApp -->
+                    <div class="text-center">
+                        <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fab fa-whatsapp text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Grupo WhatsApp</h3>
+                        <p class="text-gray-300 mb-4">Participe da nossa comunidade e tire dúvidas em tempo real</p>
+                        <a href="https://chat.whatsapp.com/BiDE2pul0uS1YU7UvTzjxw" target="_blank" 
+                           class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg transition-colors inline-block">
+                            Entrar no Grupo
+                        </a>
+                    </div>
+                    
+                    <!-- Instagram -->
+                    <div class="text-center">
+                        <div class="bg-gradient-to-r from-purple-600 to-pink-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fab fa-instagram text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Instagram</h3>
+                        <p class="text-gray-300 mb-4">Acompanhe conteúdos diários e bastidores dos projetos</p>
+                        <a href="https://instagram.com/programado.humilde" target="_blank" 
+                           class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-6 py-3 rounded-lg transition-colors inline-block">
+                            Seguir no Instagram
+                        </a>
+                    </div>
+                    
+                    <!-- TikTok -->
+                    <div class="text-center">
+                        <div class="bg-pink-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fab fa-tiktok text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">TikTok</h3>
+                        <p class="text-gray-300 mb-4">Vídeos rápidos com dicas e tutoriais de programação</p>
+                        <a href="https://tiktok.com/@programadorhumilde" target="_blank" 
+                           class="bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-lg transition-colors inline-block">
+                            Seguir no TikTok
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Perguntas Frequentes</h2>
+                    <p class="text-xl text-gray-300">Respostas para as dúvidas mais comuns</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="faq-item bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <button class="faq-question w-full text-left flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Quanto tempo leva para responder?</h3>
+                            <i class="fas fa-chevron-down text-cyan-400"></i>
+                        </button>
+                        <div class="faq-answer hidden mt-4 text-gray-300">
+                            <p>Normalmente respondo em até 24 horas. Para projetos urgentes, entre em contato pelo WhatsApp para uma resposta mais rápida.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <button class="faq-question w-full text-left flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Que tipo de projetos você aceita?</h3>
+                            <i class="fas fa-chevron-down text-cyan-400"></i>
+                        </button>
+                        <div class="faq-answer hidden mt-4 text-gray-300">
+                            <p>Aceito projetos relacionados a IA, automação, desenvolvimento web, chatbots, análise de dados e consultoria tecnológica. Também estou aberto a colaborações educacionais e de conteúdo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <button class="faq-question w-full text-left flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Oferece consultoria gratuita?</h3>
+                            <i class="fas fa-chevron-down text-cyan-400"></i>
+                        </button>
+                        <div class="faq-answer hidden mt-4 text-gray-300">
+                            <p>Ofereço uma primeira conversa gratuita de 30 minutos para entender o projeto e ver como posso ajudar. Consultorias mais extensas são pagas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <button class="faq-question w-full text-left flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Trabalha com equipes remotas?</h3>
+                            <i class="fas fa-chevron-down text-cyan-400"></i>
+                        </button>
+                        <div class="faq-answer hidden mt-4 text-gray-300">
+                            <p>Sim! Tenho experiência trabalhando com equipes distribuídas globalmente. Uso ferramentas como Slack, Discord, Zoom e GitHub para colaboração eficiente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">&copy; 2024 PIQUETE. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menu mobile toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Formulário de contato
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simular envio do formulário
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Enviando...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                // Mostrar mensagem de sucesso
+                document.getElementById('success-message').classList.remove('hidden');
+                
+                // Resetar formulário
+                this.reset();
+                
+                // Restaurar botão
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+                
+                // Esconder mensagem após 5 segundos
+                setTimeout(() => {
+                    document.getElementById('success-message').classList.add('hidden');
+                }, 5000);
+            }, 2000);
+        });
+
+        // FAQ toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.parentElement.querySelector('.faq-answer');
+                const icon = this.querySelector('i');
+                
+                if (answer.classList.contains('hidden')) {
+                    answer.classList.remove('hidden');
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    answer.classList.add('hidden');
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
